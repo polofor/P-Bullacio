@@ -23,7 +23,7 @@ El objetivo principal de este proyecto es crear una página web que sirva como p
 - **HTML5** y **CSS3**: Para la estructura y diseño visual de la página.
 - **JavaScript**: Para funcionalidades interactivas y dinámicas.
 - **Bootstrap**: Para el diseño responsivo y componentes pre-diseñados.
-- **PHP** (si aplica): Para el manejo de formularios de contacto y otras funciones dinámicas.
+- **PHP**: Para el manejo de formularios de contacto y otras funciones dinámicas.
 
 ---
 
