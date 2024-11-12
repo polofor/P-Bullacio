@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Noticias</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<style>
+    /* Reseteo básico de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #006c84;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos del contenido principal */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.main-news h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.main-news img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.main-news p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.read-more:hover {
+    background-color: #555;
+}
+
+/* Estilos de las noticias secundarias */
+.secondary-news h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.news-item {
+    margin-bottom: 20px;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.news-item h4 {
+    font-size: 1.2rem;
+}
+
+.news-item p {
+    margin-bottom: 10px;
+}
+
+.news-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #006c84;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Noticias Hoy</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Olimpiadas</a></li>
+                <li><a href="#">Economía</a></li>
+                <li><a href="#">Deportes</a></li>
+                <li><a href="#">Cultura</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main-news">
+            <h2>Titular Principal: CAMPEONES</h2>
+            <img style="width: 1000px; height: 600px;" src="img/noti-handbal-f.jpg" alt="Elecciones 2024">
+            <p>El equipo de Handball femenino logro consagrarse campeonas de la primera edicion de las olimpiadas escolares y jugaran en la zona regional donde se enfrentaran a las mejores del pais</p>
+            <a href="#" class="read-more">Leer más</a>
+        </section>
+
+        <section class="secondary-news">
+            <h3>Otras Noticias</h3>
+            
+            <div class="news-item">
+                <img src="https://via.placeholder.com/400x200" alt="Noticia Economía">
+                <h4>Mercado Global en Tensión: ¿Qué Podemos Esperar?</h4>
+                <p>Los mercados globales han mostrado una gran volatilidad en las últimas semanas. La incertidumbre política y los cambios en las políticas comerciales están generando preocupación en los inversores.</p>
+                <a href="#">Leer más</a>
+            </div>
+
+            <div class="news-item">
+                <img src="https://via.placeholder.com/400x200" alt="Noticia Tecnología">
+                <h4>Tecnología: Avances en Inteligencia Artificial</h4>
+                <p>Una nueva generación de inteligencia artificial está cambiando la manera en que interactuamos con la tecnología. Las empresas están invirtiendo millones en desarrollar sistemas más eficientes y autónomos.</p>
+                <a href="#">Leer más</a>
+            </div>
+
+            <div class="news-item">
+                <img src="https://via.placeholder.com/400x200" alt="Noticia Deportes">
+                <h4>Deportes: La Preparación para los Juegos Olímpicos 2024</h4>
+                <p>Los atletas de todo el mundo están en la recta final de su preparación para los Juegos Olímpicos de 2024, que se celebrarán en París. Se espera una competición feroz y un nivel de participación sin precedentes.</p>
+                <a href="#">Leer más</a>
+            </div>
+
+            <div class="news-item">
+                <img src="https://via.placeholder.com/400x200" alt="Noticia Medio Ambiente">
+                <h4>Medio Ambiente: Crece la Preocupación por el Cambio Climático</h4>
+                <p>Un nuevo informe de la ONU señala que los efectos del cambio climático son más severos de lo previsto. Las temperaturas globales continúan subiendo, y los científicos hacen un llamado urgente a tomar medidas.</p>
+                <a href="#">Leer más</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Noticias Hoy. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
