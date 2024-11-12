@@ -1,4 +1,4 @@
-# Página Oficial del Colegio [Nombre del Colegio]
+# Página Oficial del Colegio E.E.S.T N°1.
 
 Este proyecto ha sido desarrollado por el **curso 6º 1º** del Colegio E.E.S.T N°1. El propósito de este sitio web es proporcionar una plataforma en línea moderna y accesible que represente nuestra institución educativa, facilitando la comunicación entre estudiantes, docentes y padres.
 
@@ -31,4 +31,4 @@ Este proyecto ha sido posible gracias al esfuerzo y colaboración de todos los e
 
 ---
 
-¡Gracias por visitar la página oficial del Colegio [Nombre del Colegio]!
+¡Gracias por visitar la página oficial del Colegio E.E.S.T N°1.!
