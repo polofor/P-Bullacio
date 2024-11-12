@@ -12,7 +12,7 @@ ul{
     width:auto;
 }
 
-ul li a{
+.cambiaColor{
     color:white;
     font-size:20px;
     font-weight:bold;
@@ -38,6 +38,7 @@ ul li a{
     z-index:-1;
 }
 .imagen{
+    
     background-repeat:no-repeat;
     background-size:cover;
     width:100%;
@@ -82,4 +83,103 @@ ul li a{
     margin-bottom:50px;
     border-radius:20px/20px;
             
+}
+.tituloCards{
+    position: absolute;
+    top: 1700px;
+    padding-left: 75px;
+    color: white;
+    font-size: 25px;
+    font-weight:bolder;
+    transition: 1s;
+    
+}
+.cards:hover .imgcards{
+    transform: scale(1.04);
+    transition: 1s;
+}
+.cards:hover .tituloCards{
+    transform: translateY(-200px) scale(1.1);
+    cursor:grab;
+    transition:1s;
+    z-index:2;
+}
+
+.footer{
+    height: 240px;
+    background-color: #006c84;
+    margin-top: 130px;
+}
+.ulRedes{
+    left: 35%;
+    position:absolute;
+    top:2080px;
+    list-style: none;
+    display: flex;
+}
+.ulRedes li{
+    margin-left: 30px;
+    background-color:white;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px/20px;
+    border: 2px solid black;
+    transition: 0.5s;
+}
+.ulRedes li a{
+    color: black;
+    font-weight: bolder;
+
+}
+.ulRedes li:hover{
+    transform: scale(1.1) translateY(-10px);
+    background-color:rgba(0, 0, 0, 50%);
+    
+}
+.ulRedes li a:hover{
+ color: white;
+}
+
+.ulFooter{
+    left: 28%;
+    position:absolute;
+    top:2150px;
+    list-style: none;
+    display: flex;
+}
+.ulFooter li{
+    margin-left: 30px;
+    font-size: 24px;    
+}
+.ulFooter li a{
+    color: white;
+    text-decoration: none;
+}
+.ulFooter li a:hover{
+    opacity: 0.5;
+    transition:0.5s;
+}
+.nombreFooter{
+    height: 50px;
+    background-color:#025466;
+}
+.leerMas{
+    background-color: #006c84;
+    height: 60px;
+    width: 120px;
+    border-radius: 20px/20px;
+    color: white;
+    position: relative;
+    bottom:100px;
+    font-size: 20px;
+    font-weight: bolder;
+    border:1px solid white;
+    transition:1s;
+    z-index: 2;
+}
+.leerMass:hover{
+    background-color: #F5BE41;
+    transform: scale(1.1);
+    transition:1s;
+
 }
