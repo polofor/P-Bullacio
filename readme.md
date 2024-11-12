@@ -25,10 +25,6 @@ El objetivo principal de este proyecto es crear una página web que sirva como p
 - **Bootstrap**: Para el diseño responsivo y componentes pre-diseñados.
 - **PHP** (si aplica): Para el manejo de formularios de contacto y otras funciones dinámicas.
 
-## Agradecimientos
-
-Este proyecto ha sido posible gracias al esfuerzo y colaboración de todos los estudiantes del **Curso 6º 1º**, así como al apoyo de los docentes y personal administrativo del colegio. Nos sentimos orgullosos de presentar esta página como una representación digital de nuestro colegio.
-
 ---
 
 ¡Gracias por visitar la página oficial del Colegio E.E.S.T N°1.!
