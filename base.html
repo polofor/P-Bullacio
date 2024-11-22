@@ -4,10 +4,6 @@
         <script src="https://kit.fontawesome.com/112375c2c5.js" crossorigin="anonymous"></script>
         <style>
 
-            *{
-                font-family:sans-serif;
-            }
-
             #nav{
                 width: auto;
                 height: 80px;
@@ -20,7 +16,6 @@
                 height: auto;
                 background-color: rgb(216, 216, 216);
                 border-radius: 5%;
-                
                 margin:30px;
             }
     
@@ -29,7 +24,6 @@
                 height: auto;
                 background-color: rgb(216, 216, 216);
                 border-radius: 5%;
-                
                 margin:30px
             }
     
@@ -37,8 +31,7 @@
                 width: auto;
                 height: 330px;
                 background-color: #006c84;
-                clear: both;
-                
+                clear: both;   
             }
             nav div img{
                 height: 60px;
@@ -57,7 +50,7 @@
             }
             footer ul{
                 float:left;
-                padding-left: 10%;
+                
                 font-size: 18px;
                 color: white;
                 list-style: none;
@@ -87,6 +80,7 @@
                 margin-right:30px;
                 font-size: 15px;
                 color: gainsboro;
+                display: inline;
                 
             }
             .tituloh1{
@@ -130,7 +124,7 @@
             </div>
         </nav>
 
-        <div style="display: flex;">
+        <div class="flex-box-lg flex-col-sm" style="display: flex; width: auto; flex-direction: row;">
         <div id="div1">
             <h1 class="tituloh1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est sunt facilis molestiae tenetur aliquam corporis cumque voluptates asperiores eveniet quos vero, laudantium vel amet? At necessitatibus nihil est natus molestias.</h1>
             <br>
@@ -166,8 +160,9 @@
 
         <footer  id="foot">
         <!--logo 150 largo y ancho. border 100%/100%-->
-        <div style="position:absolute;height: 150px;width: 150px;border-radius: 100%/100%;margin: 30px;"><img src="img/logo.png"style="height: 150px;width: 150px;border-radius: 100%/100%;"></img></div>
-            <div>
+        <!--<div style="position:absolute;height: 150px;width: 150px;border-radius: 100%/100%;display: flex;"><img src="img/logo.png"style="height: 150px;width: 150px;border-radius: 100%/100%;"></img></div>-->
+            <div style="display: flex;align-content: center;justify-content: center;">
+                <div style="display: flex;align-items: center;"><div style="height: 150px;width: 150px;border-radius: 100%/100%;"><img src="img/logo.png"style="height: 150px;width: 150px;border-radius: 100%/100%;"></img></div></div>
                 <ul style="float: right;margin-right: 3%;">
                     <li style="font-size: 25px;"><a href="">Ayudas</a></li>
                     <li><a href="">Soporte</a></li>
@@ -190,16 +185,18 @@
                     <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li></center>
                 </ul>
             </div>
-            
-            <center><ul>
+            <div style="display: flex;align-items: center;">
+                <div style="margin: 0 auto;">
+            <ul>
                 <li class="desarrolladores">Santiago Gerhart</li>
                 <li class="desarrolladores">Iván Bertolotti</li>
                 <li class="desarrolladores">Lucas Lizardo</li>
                 <li class="desarrolladores">Tiziano Flores</li>
                 <li class="desarrolladores">Axel Castronuovo</li>
                 <li class="desarrolladores">Valentín Lopez</li>
-            </ul></center>
-        
+            </ul>
+                </div>
+            </div>
         </footer>
     </body>
 
