@@ -1,185 +1,219 @@
-*{
-    margin:0px;
-    padding:0px;
-    font-family:sans-serif;
+body{
+    margin: 0;
+    background-color:#003c5f;
 }
-
-
-ul{
-    position:relative;
-    top:-450px;
-    left:650px;
-    width:auto;
+/*b2ae9c 1b5d40*/
+@media (max-width: 768px) {
+    nav {
+        height: 10vh;
+        padding: 0 1%;
+    }
 }
-
-.cambiaColor{
-    color:white;
-    font-size:20px;
-    font-weight:bold;
-    text-decoration:none;
-    display:block;
-    float:left;
-    margin-left:30px;
-    transition:0.5s;
-
-}
-
-
-.cambiaColor:hover{
-    color:#F5BE41;
-    transform:scale(1.2);
-    transition:0.5s;
-}
-
-.transparente{
+nav{
+    background-color: rgba(0, 0, 0, 50%);
     width:100%;
-    height:500px;
-    background-color:rgba(0,0,0,50%);
-    z-index:-1;
+    height: 120px;
+    position: fixed;
 }
-.imagen{
+nav div img{
+    height: 100px;	
+}
+.nombreNav{
+    color: white;
+    font-size: 20px;
+    margin: 20px;
     
-    background-repeat:no-repeat;
-    background-size:cover;
-    width:100%;
-    height:500px;
 }
-.inscripciones{
-    border:1px solid #006c84;
-    background-color:#006c84;
-    border-radius:5px/5px;
-    color:white;
-    font-size:25px;
-    font-weight:bolder;
-    height:30px;
-    position:relative;
-    bottom:200px;
-    right:400px;
-    padding:5px;
-    text-decoration:none;
+.contenedor{
+    display: flex;
+    margin-left: 50px;
+    margin-top: 10px;
 }
-.boton1{
-    border:2px solid white;
-    background-color:#006c84;
-    color:white;
-    border-radius:5px/5px;
-    width:200px;
-    height:40px;
-    font-size:20px;
-    font-weight:bolder;
-    margin-left:18px;
-    margin-top:53px;
-    transition:0.5s;
-}
-.boton1:hover{
-    transform:scale(1.2);
-    background-color:#F5BE41;
-    transition:0.5s;
-}
-.cards{
-    background-color:gainsboro;
-    width:400px;
-    height:500px;
-    margin-bottom:50px;
-    border-radius:20px/20px;
-            
-}
-.tituloCards{
-    position: absolute;
-    top: 1700px;
-    padding-left: 75px;
+.contenedor ul{
+    display: flex;
+    list-style: none;
     color: white;
     font-size: 25px;
-    font-weight:bolder;
-    transition: 1s;
-    
+    margin-left: 20px;
 }
-.cards:hover .imgcards{
-    transform: scale(1.04);
-    transition: 1s;
+.contenedor ul li{
+    padding-left: 40px;
 }
-.cards:hover .tituloCards{
-    transform: translateY(-200px) scale(1.1);
-    cursor:grab;
-    transition:1s;
-    z-index:2;
-}
-
-.footer{
-    height: 240px;
-    background-color: #006c84;
-    margin-top: 130px;
-}
-.ulRedes{
-    left: 35%;
-    position:absolute;
-    top:2080px;
-    list-style: none;
-    display: flex;
-}
-.ulRedes li{
-    margin-left: 30px;
-    background-color:white;
-    height: 40px;
-    width: 40px;
-    border-radius: 20px/20px;
-    border: 2px solid black;
+.cambiaColor{
+    color: white;
     transition: 0.5s;
 }
-.ulRedes li a{
-    color: black;
-    font-weight: bolder;
-
+.cambiaColor a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
 }
-.ulRedes li:hover{
-    transform: scale(1.1) translateY(-10px);
-    background-color:rgba(0, 0, 0, 50%);
+.cambiaColor:hover{
+    transform:scale(1.1);
+    transition:0.5s;
+}
+.cambiaColor a:hover{
+    color: wheat;
+    transition: 0.25s;
+}
+.barraLateral{
+    position: fixed;
+    background-color: rgba(0, 0, 0,50%);
+    height: 155px;
+    width: 50px;
+    top:40%;
+    right: 0;
+    border-radius: 10px 0px 0px 10px;
+}
+.iconoBarraLateral{
+    width: 40px;
+    margin-top: 6.2px;
+    margin-left: 6px;
     
 }
-.ulRedes li a:hover{
- color: white;
+.imgPrincipal{
+    margin-top: 120px;
+    width: 40%;
+    height: 538px;
+    border-radius: 0px 50% 50% 0px;
 }
-
-.ulFooter{
-    left: 28%;
-    position:absolute;
-    top:2150px;
-    list-style: none;
+.titulo{
     display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    
 }
-.ulFooter li{
-    margin-left: 30px;
-    font-size: 24px;    
+.imgTitulo{
+    width:250px;
+    left: 58%;
+    top:150px;
+    position:absolute;
+    z-index: -1;
 }
-.ulFooter li a{
+.aTitulo{
+    position:absolute;
+    top: 420px;
+    right: 20px;
+    margin-right: 100px;
+    text-shadow: -1px 1px 5px rgba(0, 0, 0, 0.99);
+    text-align: center;
+}
+.descripcion{
+    background-color: #00304d;
+    height: 300px;
+    width: 50%;
+}
+.aDescripcion{
+    color: rgba(255, 255, 255, 50%);
+    font-size: 30px;
+    position: relative;
+    top: 50px;
+    left: 20px;
+    line-height: 60px;
+}
+.divVideo{
+    width: 50%;
+    height: 300px;
+    background-color:#00304d;
+}
+.video{
+    width: 98%; 
+    height: 290px; 
+    margin: 5px;
+}
+.contenedorVideo{
+    display: flex;
+    padding-top: 100px;
+}
+.verMas{
+    background-color:#00304d;
+    width: 50%;
+    margin-left: 25%;
+    height: 300px;
+    border-radius: 0px 0px 250px 250px;
+    display: flex;
+    flex-direction: column;
+}
+.aVerMas{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+.buttonVerMas{
+    height: 50px;
+    width: 200px;
+    margin-top: 80px;
+    border-radius: 20px;
+    background-color:#003c5f;
+    color: white;
+    font-size: 20px;
+    border: 1px solid black;
+    transition:0.5s;
+}
+.buttonVerMas:hover{
+    cursor:pointer;
+    background-color:white;
+    color:black;
+    transform: scale(1.1);
+    transition:0.5s;
+    border: 0px;
+}
+.tituloModalidades{
+    background-color:#00588f;
+    height: 100px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 100px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+}
+.divModalidades{
+    display: flex;
+    background-color: #00588f;
+    padding: 30px;
+}
+.cardsModalidades{
+    height: 500px;
+    width: 35%;
+    margin-left: 10%;
+    background-color: #003c5f;
+    border-radius: 20px;
+    text-align: center;
+}
+.iconModalidades{
+    width: 100%;
+    height: 450px;
+}
+#aModalidades{
+    font-size: 20px;
     color: white;
     text-decoration: none;
 }
-.ulFooter li a:hover{
-    opacity: 0.5;
-    transition:0.5s;
+footer{
+    background-color:black;
+    display: flex;
 }
-.nombreFooter{
-    height: 50px;
-    background-color:#025466;
-}
-.leerMas{
-    background-color: #006c84;
+.divIconsFooter{
     height: 60px;
-    width: 120px;
-    border-radius: 20px/20px;
-    color: white;
-    position: relative;
-    bottom:100px;
-    font-size: 20px;
-    font-weight: bolder;
-    border:1px solid white;
-    transition:1s;
-    z-index: 2;
+    margin-top:45px;
+    margin-left: 700px;
 }
-.leerMass:hover{
-    background-color: #F5BE41;
+.iconFooter{
+    padding: 5px;
+    margin-left: -4px;
+    transition: 0.5s;
+}
+.iconFooter:hover{
     transform: scale(1.1);
-    transition:1s;
+    transition: 0.5s;
+}
+.parteDeAbajo{
+    height: 100px;
+    background-color: WHITE;
 
 }
