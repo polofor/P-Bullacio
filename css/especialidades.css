@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'dance';
+}
+
+@font-face {
+    font-family: 'dance';
+    src: url('../font/dance.ttf');
+}
+
+/* background-color: #003c5f;*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #003c5f;
+
+    width: 100%;
+    height: 20vh;
+
+    position:fixed;
+    left: -1;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    margin-left: 1rem;
+}
+
+.logo p {
+    color: white;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1.2rem;
+
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+.logo img {
+    height: 7vw;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+.menu {
+    margin-right: 1.2rem;
+}
+
+.menu-options {
+    display: flex;
+    list-style: none;
+}
+
+.menu-options li {
+    margin: 1rem;
+}
+
+.menu-options li a {
+    transition: 0.2s;
+
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+
+    color: white;
+    font-family: 'dance';
+    font-weight: 700;
+}
+
+.menu-options li a:hover {
+    transition: 0.2s;
+
+    color: wheat;
+
+}
+
+.menu-options li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: wheat;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.menu-options li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top: 20vh;
+}
+
+.container-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+    background-color: #498fb8;
+    background-image: url('../img/segundaImagen.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.information {
+    margin-top: 1rem;
+    width: 90%;
+
+    background-color: #d6eaf840;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.information h1 {
+    color: white;
+}
+
+.modalidades {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: 1rem;
+    width: 90%;
+    height: 50%;
+    background-color: #d6eaf840;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 90%;
+    margin: 1rem;
+
+    background-color: white;
+
+    color: #424949;
+
+    border-radius: 5px;
+}
+
+.card-title {
+    background-color: #003c5f;
+    width: 100%;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-title h1 {
+    margin-left: 0.5rem;
+}
+
+.card-description {
+    text-align: center;
+    padding: 1rem;
+}
+
+.card-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card-button button{
+    border-radius: 5px;
+    background-color: #003c5f;
+    padding: 0.4rem;
+    margin: 0.4rem;
+
+    border: none;
+    color: white;
+}
+
+.card-button button:hover{
+    background-color: #498fb8;
+}
+
+@media (max-width: 720px) {
+    .menu-options {
+        display: none;
+    }
+}
