@@ -10,6 +10,13 @@
 }
 
 /* background-color: #003c5f;*/
+body {
+    background-image: url('../img/segundaImagen.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 header {
     display: flex;
@@ -114,11 +121,6 @@ main {
 
     width: 100%;
     height: 100vh;
-    background-color: #498fb8;
-    background-image: url('../img/segundaImagen.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .information {
@@ -168,6 +170,8 @@ main {
     color: white;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .card-title h1 {
@@ -187,19 +191,64 @@ main {
     height: 100%;
 }
 
-.card-button button{
+.card-button a{
     border-radius: 5px;
     background-color: #003c5f;
     padding: 0.4rem;
     margin: 0.4rem;
 
     border: none;
+    text-decoration: none;
     color: white;
 }
 
-.card-button button:hover{
+.card-button a:hover{
     background-color: #498fb8;
 }
+
+.card-button a:active{
+    background-color: #06344e;
+}
+
+.container-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        
+    width: 100%;
+}
+
+.about-informatica {
+    background-color: #d6eaf8;
+    width: 90%;
+    margin-top: 1rem;
+    list-style: none;
+}
+
+.about-informatica-title h1 {
+    font-size: 2rem;
+}
+
+.about-informatica-div {
+    margin-left: 1.2rem;
+}
+
+.about-informatica ul {
+    list-style: none;
+}
+
+.about-electronica {
+    background-color: #d6eaf8;
+    width: 90%;
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: red;
+    margin-top: 30vh;
+}
+
 
 @media (max-width: 720px) {
     .menu-options {
